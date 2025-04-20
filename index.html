@@ -26,19 +26,31 @@
         </div>
     </header>
 
-
     <nav class="nav box">
         <button class="catalog-button">Каталог товаров</button>
         <div class="searcher-box">
             <form class="searcher">
                 <input class="search" type="text" placeholder="Поиск по товарам">
-                <img src="imgs/lupa.png" alt="лупа">
             </form>
         </div>
-        <a class="nav-item" href="#">Войти</a>
-        <a class="nav-item" href="#">Избранное</a>
-        <a class="nav-item" href="#">Сравнение</a>
-        <a class="nav-item" href="#">Корзина</a>
+        <div class="nav-items">
+            <a class="nav-item" href="#">
+                <img src="imgs/user-icon.png" alt="" class="nav-icon">
+                <span>Войти</span>
+            </a>
+            <a class="nav-item" href="#">
+                <img src="imgs/heart-icon.png" alt="" class="nav-icon">
+                <span>Избранное</span>
+            </a>
+            <a class="nav-item" href="#">
+                <img src="imgs/compare-icon.png" alt="" class="nav-icon">
+                <span>Сравнение</span>
+            </a>
+            <a class="nav-item" href="#">
+                <img src="imgs/cart-icon.png" alt="" class="nav-icon">
+                <span>Корзина</span>
+            </a>
+        </div>
     </nav>
 
 
@@ -46,7 +58,10 @@
 
         <div class="add">
             <div class="add1">
-                <img src="imgs/add1.jpg" alt="реклама 1">
+                <img class="slide active" src="imgs/add1-1.jpg" alt="реклама 1">
+                <img class="slide" src="imgs/add1-2.jpg" alt="реклама 2">
+                <img class="slide" src="imgs/add1-3.jpg" alt="реклама 3">
+                <img class="slide" src="imgs/add1-4.jpg" alt="реклама 4">
             </div>
             <div class="add2">
                 <img src="imgs/add2.webp" alt="реклама 2">
@@ -117,33 +132,58 @@
         </div>
     </div>
 
+
     <div class="footer">
         <div class="footer-top">
-            <div class="footer-info">
-                <p class="info-header">Покупателям</p>
-                <a href="#">Доставка</a>
-                <a href="#">Конфигуратор ПК</a>
-            </div>
-            <div class="footer-info">
-                <p class="info-header">Информация</p>
-                <a href="#">Акции</a>
-                <a href="#">Магазины</a>
-            </div>
-            <div class="footer-info">
-                <p class="info-header">Компания</p>
-                <a href="#">О нас</a>
-            </div>
-            <div class="footer-info">
-                <p class="info-header">Контакты</p>
-                <a href="#">Орел +7 (945) 234-56-78</a>
+            <div class="footer-columns">
+                <div class="footer-info">
+                    <h3 class="info-header">Покупателям</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Конфигуратор ПК</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Оплата</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h3 class="info-header">Информация</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Магазины</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h3 class="info-header">Компания</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li><a href="#">Экология</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h3 class="info-header">Контакты</h3>
+                    <ul class="footer-list">
+                        <li class="contact-item">
+                            <a href="#">+7 (945) 234-56-78</a>
+                        </li>
+                        <li class="contact-item">
+                            <span>г. Орел, ул. Ленина, 15</span>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#">info@citilink.ru</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <hr>
+        <div class="divider"></div>
+        <div class="bottom-content">
             <p>© Ситилинк, 2008 – 2025</p>
         </div>
     </div>
 
-
-
+    <script src="index.js"></script>
 </body>
