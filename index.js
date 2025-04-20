@@ -26,3 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
         sliderInterval = setInterval(nextSlide, intervalTime);
     });
 });
+
+// Мобильное меню
+document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+    document.querySelector('.nav-items').classList.toggle('active');
+});
